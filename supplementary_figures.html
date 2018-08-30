@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>supplementary_figures</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<!-- Font Awesome -->
+<!-- <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" /> -->
+<!-- <script src="https://use.fontawesome.com/54ee8c2dfd.js"></script> -->
+
+<!-- Google fonts -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Oswald:400,700' rel='stylesheet' type='text/css'>
+
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+<!-- Google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-8298649-8', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="supplementary_figures.html">
+    <span class="fa fa-sticky-note"></span>
+     
+    Supplementary figures
+  </a>
+</li>
+<li>
+  <a href="about.html">
+    <span class="fa fa-info-circle"></span>
+     
+    About
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">supplementary_figures</h1>
+
+</div>
+
+
+<div id="load-libraries-and-data" class="section level2">
+<h2>Load libraries and data</h2>
+<pre class="r"><code>library(ggplot2)
+library(ribiosPlot)
+library(ribiosPlot)
+library(RColorBrewer)
+library(data.table)
+
+Daniel_results_name=&quot;~/Disease_module_identification_DREAM_change/dream_consensus_modules.functional_enrichment.txt&quot;
+#Daniel_results=read.csv(Daniel_results_name,header = TRUE,sep = &quot;\t&quot;,stringsAsFactors = FALSE)
+Daniel_results=fread(Daniel_results_name,stringsAsFactors = FALSE)
+Daniel_results=data.frame(Daniel_results)
+Daniel_network_results=Daniel_results[Daniel_results$network==&quot;PPI-STRING&quot;,]
+GO_Rec_index=c(grep(&quot;GO&quot;,Daniel_network_results$termId),grep(&quot;REACTOME&quot;,Daniel_network_results$term))
+Daniel_network_results=Daniel_network_results[GO_Rec_index,]
+
+Tao_results= fread(file = &quot;~/Disease_module_identification_DREAM_change/dream_consensus_modules_results_alpha0.5.csv&quot;,stringsAsFactors = FALSE) 
+Tao_results=data.frame(Tao_results)
+Tao_reactome_results=Tao_results[grep(&quot;HSA&quot;,Tao_results$pathway_id),]</code></pre>
+</div>
+<div id="reactome-classes-associated-with-modules-plot" class="section level2">
+<h2>Reactome classes associated with modules plot</h2>
+<pre class="r"><code>reactome_classes=unique(Tao_reactome_results$Go_Reactome_root_names)
+reactome_classes=unique(unlist(sapply(reactome_classes, function(x){strsplit(x,split = &quot;#&quot;)[[1]]})))
+reactome_colors=colorRampPalette(brewer.pal(9, &quot;Set1&quot;))(length(reactome_classes))
+names(reactome_colors)=reactome_classes
+reactome_class2moduleCount=data.frame(reactome_classes=reactome_classes,module_num=rep(0,length(reactome_classes)),names=reactome_classes)
+rownames(reactome_class2moduleCount)=reactome_classes
+for(i in 1:length(reactome_classes)){
+  reactome_class2moduleCount[reactome_classes[i],&quot;module_num&quot;]=sum(grepl(reactome_classes[i],Tao_reactome_results$Go_Reactome_root_names,fixed = TRUE))
+}
+
+disease_index=grep(&quot;Disease&quot;,rownames(reactome_class2moduleCount))
+reactome_class2moduleCount_noDisease=reactome_class2moduleCount[-disease_index,]
+reactome_classes_noDisease=reactome_classes[-disease_index]
+reactome_colors_noDisease=reactome_colors[-disease_index]
+reactome_class2moduleCount_ggplot=ggplot(data = reactome_class2moduleCount_noDisease,aes(x=reactome_classes,y=module_num,fill=names))+
+  geom_bar(stat = &quot;identity&quot;)+
+  coord_flip()+
+  scale_x_discrete(limits=reactome_classes_noDisease[order(reactome_class2moduleCount_noDisease$module_num)])+                # !!!!!!!!!
+  scale_fill_manual(values=reactome_colors_noDisease[reactome_classes[order(reactome_class2moduleCount_noDisease$module_num)]])+
+  ylab(&quot;Module count&quot;)+
+  xlab(&quot;Reactome classes&quot;)+
+  theme(legend.position=&quot;none&quot;)
+
+reactome_class2moduleCount_ggplot</code></pre>
+<p><img src="supplementary_figures_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+<div id="distribution-of-a-significant-terms-fdr-corrected-p-value-from-noncentral-hypergeometric-andb-selected-terms-regression" class="section level2">
+<h2>Distribution of (a) #significant terms (FDR corrected P-value from noncentral hypergeometric) and(b) #selected terms (regression)</h2>
+<pre class="r"><code>tao_module_names=unique(Tao_results$module)
+hist_tao=data.frame(module=tao_module_names,pathway_num=rep(0,length(tao_module_names)),row.names = tao_module_names,stringsAsFactors = FALSE)  
+for(i in 1:length(tao_module_names)){
+ hist_tao[tao_module_names[i],&quot;pathway_num&quot;]=sum(Tao_results$module==tao_module_names[i]) 
+}
+
+
+daniel_module_names=unique(Daniel_network_results$module)
+hist_daniel=data.frame(module=daniel_module_names,pathway_num=rep(0,length(daniel_module_names)),row.names=daniel_module_names,stringsAsFactors = FALSE)
+for (i in 1:length(daniel_module_names)) {
+  #print(i)
+  hist_daniel[daniel_module_names[i],&quot;pathway_num&quot;]=sum(Daniel_network_results$module==daniel_module_names[i])
+}
+
+combined_hist_frame=data.frame(name=c(rep(&#39;tao&#39;,nrow(hist_tao)),rep(&#39;daniel&#39;,nrow(hist_daniel))),
+                               pathway_num=c(hist_tao$pathway_num,hist_daniel$pathway_num))
+ggplot(combined_hist_frame,aes(x=pathway_num))+
+  geom_histogram(
+    bins=30,
+    colour=&quot;black&quot;, fill=&quot;white&quot;
+  )+
+  facet_wrap(~name,ncol=1)+
+  theme_bw()+
+  ggtitle(&quot;Distribution of num for selected terms &quot;)</code></pre>
+<p><img src="supplementary_figures_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
+<div id="scatterplot-significant-go-terms-fisher-vs.-selected-go-terms-for-each-module" class="section level2">
+<h2>Scatterplot: #significant go terms (Fisher) vs. #selected go terms for each module</h2>
+<pre class="r"><code>common_module_names=intersect(tao_module_names,daniel_module_names)
+scatter_plot=data.frame(module=common_module_names,row.names = common_module_names,
+                        tao_pathway_num=hist_tao[common_module_names,]$pathway_num,
+                        daniel_pathway_num=hist_daniel[common_module_names,]$pathway_num
+                        )
+
+cor(scatter_plot$tao_pathway_num,scatter_plot$daniel_pathway_num)</code></pre>
+<pre><code>## [1] 0.6077983</code></pre>
+<pre class="r"><code>ggplot(scatter_plot, aes(x=daniel_pathway_num, y=tao_pathway_num)) + geom_point(shape=1) +
+  theme_bw()</code></pre>
+<p><img src="supplementary_figures_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+<div id="overlap-go-selecetd-terms-between-two-methods" class="section level2">
+<h2>overlap GO selecetd terms between two methods</h2>
+<pre class="r"><code>Daniel_network_GO_results=Daniel_network_results[grepl(&quot;GO&quot;,Daniel_network_results$termId),]
+daniel_GO_module_names=unique(Daniel_network_GO_results$module)
+Tao_go_results=Tao_results[grep(&quot;GO&quot;,Tao_results$pathway_id),]
+tao_go_module_names=unique(Tao_go_results$module)
+go_common_module_names=intersect(tao_go_module_names,daniel_GO_module_names)
+
+tao_go_id=unique(Tao_go_results$pathway_id)  #1949
+daniel_go_id=unique(Daniel_network_GO_results$termId) #10838
+total_overlap_go_id=intersect(tao_go_id,daniel_go_id)  #1872
+
+overlap_go_terms_frame=data.frame(matrix(0,nrow = length(go_common_module_names),ncol = 3),row.names = go_common_module_names)
+colnames(overlap_go_terms_frame)=c(&#39;tao_go_pathway_num&#39;,&#39;daniel_go_pathway_num&#39;,&#39;overlap_go_pathway_num&#39;)
+
+for(i in 1:length(go_common_module_names)){
+  tao_selected_pathwayIDs=Tao_go_results[Tao_go_results$module==go_common_module_names[i],&quot;pathway_id&quot;]
+  overlap_go_terms_frame[go_common_module_names[i],&quot;tao_go_pathway_num&quot;]=length(tao_selected_pathwayIDs)
+  daniel_selected_pathwayIDs=Daniel_network_GO_results[Daniel_network_GO_results$module==go_common_module_names[i],&quot;termId&quot;]
+  overlap_go_terms_frame[go_common_module_names[i],&quot;daniel_go_pathway_num&quot;]=length(daniel_selected_pathwayIDs)
+  overlap_go_terms_frame[go_common_module_names[i],&quot;overlap_go_pathway_num&quot;]=length(intersect(tao_selected_pathwayIDs,daniel_selected_pathwayIDs))
+}
+
+ggplot(overlap_go_terms_frame, aes(x=tao_go_pathway_num, y=overlap_go_pathway_num)) + geom_point(shape=1) +
+  theme_bw()</code></pre>
+<p><img src="supplementary_figures_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+</div>
+<div id="for-each-module-associated-with-a-reactome-class-columns-count-of-module-genes-of-a-given-uniprot-class-in-rows-analogous-to-fig.-3g" class="section level2">
+<h2>For each module associated with a Reactome class (columns), #count of module genes of a given UniProt class (in rows) (analogous to Fig. 3g)</h2>
+<pre class="r"><code>consensus_genesets=scan(&quot;./data/dream_consensus_modules.gmt&quot;,what = &quot;&quot;,sep = &quot;\n&quot;)
+consensus_genesets=strsplit(consensus_genesets,split = &quot;\t&quot;)
+consensus_names=sapply(consensus_genesets, function(x){x[1]})
+consensus_genesets=lapply(consensus_genesets,function(x){
+  x_genes=x[-c(1,2)]
+  return(x_genes)
+})
+names(consensus_genesets)=consensus_names
+
+tao_reactome_module_names=unique(Tao_reactome_results$module)
+tao_reactome_genesets=consensus_genesets[tao_reactome_module_names]
+tao_reactome_all_genes=vector()
+for (i in 1:length(tao_reactome_genesets)){
+  tao_reactome_all_genes=union(tao_reactome_all_genes,tao_reactome_genesets[[i]])
+}
+
+
+uniprot_frame=read.csv(file=&quot;~/Disease_module_identification_DREAM_change/uniprot_frame.csv&quot;,header = TRUE,row.names = 1)   #19982 * 721
+uniprot_all_genes=rownames(uniprot_frame)
+uniprot_reactome_common_genes=intersect(uniprot_all_genes,tao_reactome_all_genes)
+uniprot_frame=uniprot_frame[uniprot_reactome_common_genes,]
+#uniprot_all_genes=rownames(uniprot_frame)
+#uniprot_all_keywords=colnames(uniprot_frame)
+
+
+#
+test=hist(colSums(uniprot_frame),200)</code></pre>
+<p><img src="supplementary_figures_files/figure-html/unnamed-chunk-6-1.png" width="2000" height="1500" /></p>
+<pre class="r"><code>sum(colSums(uniprot_frame)&gt;100 )#&amp; colSums(uniprot_frame)&lt;150)</code></pre>
+<pre><code>## [1] 166</code></pre>
+<pre class="r"><code>sum(rowSums(uniprot_frame)&gt;50)</code></pre>
+<pre><code>## [1] 0</code></pre>
+<pre class="r"><code>uniprot_frame_filted=uniprot_frame[,colSums(uniprot_frame)&gt;50]
+uniprot_all_genes=rownames(uniprot_frame_filted)
+uniprot_all_keywords=colnames(uniprot_frame_filted)
+uniprot_reactome_common_genes=intersect(uniprot_all_genes,tao_reactome_all_genes)
+
+## cluster uniprot keywords
+#raw=unname(uniprot_frame)
+uniprot_frame_d &lt;- dist(t(uniprot_frame_filted), method = &quot;manhattan&quot;) # distance matrix
+uniprot_frame_fit &lt;- hclust(uniprot_frame_d, method=&quot;ward.D2&quot;) 
+plot(uniprot_frame_fit,ann = FALSE)</code></pre>
+<p><img src="supplementary_figures_files/figure-html/unnamed-chunk-6-2.png" width="2000" height="1500" /></p>
+<pre class="r"><code>clusterCut &lt;- cutree(uniprot_frame_fit,k=31)   #k=40 h = 1000
+
+clusterCut_groups=unique(clusterCut)
+clusterCut_name_groups=lapply(clusterCut_groups, function(i){colnames(uniprot_frame_filted)[clusterCut==clusterCut_groups[i]]})
+saveRDS(clusterCut_name_groups,&quot;clusterCut_name_groups.rds&quot;)
+
+uniprot_class_tao_defined=clusterCut_name_groups
+names(uniprot_class_tao_defined)=c(&quot;other&quot;,&quot;Transport&quot;,&quot;Secreted_Signal&quot;,&quot;Transcription&quot;,&quot;G.protein.coupled.receptor&quot;,&quot;Nucleotide.binding&quot;,
+     &quot;Phosphoprotein&quot;,&quot;Ubl.conjugation_Isopeptide.bond&quot;,&quot;Developmental.protein_Differentiation&quot;,&quot;Polymorphism&quot;,
+     &quot;Transmembrane&quot; ,&quot;Transit.peptide_Mitochondrion&quot;,&quot;Complete/Reference.proteome&quot;,&quot;Nucleus&quot;,
+     &quot;Glycoprotein&quot;,&quot;Zinc&quot;,&quot;Hydrolase&quot;,&quot;Transferase&quot;,&quot;Membrane&quot;,&quot;Disease.mutation&quot;,&quot;Endoplasmic.reticulum&quot;,
+     &quot;Coiled.coil&quot;,&quot;Alternative.splicing&quot;,&quot;Metal.binding&quot;,&quot;Repeat&quot;,&quot;X3D.structure&quot;,&quot;Direct.protein.sequencing&quot;,
+     &quot;Cytoplasm&quot;,&quot;Acetylation&quot;,&quot;Disulfide.bond&quot;,&quot;Cell.membrane&quot;)
+
+#library(ape)
+#hcd &lt;- as.dendrogram(uniprot_frame_fit)
+#plot(as.phylo(uniprot_frame_fit), type = &quot;fan&quot;,show.tip.label = FALSE)
+#uniprot_frame_reorder=uniprot_frame[,fit$order]
+
+
+
+uniprot_hist=data.frame(matrix(0,nrow = length(names(uniprot_class_tao_defined)),ncol = length(tao_reactome_module_names)),
+                        row.names =names(uniprot_class_tao_defined))
+colnames(uniprot_hist)=tao_reactome_module_names
+for(i in 1:length(tao_reactome_module_names)){
+  temp_genes=tao_reactome_genesets[[tao_reactome_module_names[i]]]
+  temp_common_genes=intersect(temp_genes,uniprot_reactome_common_genes)
+  for (j in 1:length(names(uniprot_class_tao_defined))) {
+    temp_uniprot_classes=uniprot_class_tao_defined[[names(uniprot_class_tao_defined[j])]]
+    if(length(temp_uniprot_classes)&gt;1){
+      uniprot_hist[names(uniprot_class_tao_defined)[j],tao_reactome_module_names[i]]=sum(colSums(uniprot_frame_filted[temp_common_genes,temp_uniprot_classes]) )
+    }else{
+      uniprot_hist[names(uniprot_class_tao_defined)[j],tao_reactome_module_names[i]]=sum(uniprot_frame_filted[temp_common_genes,temp_uniprot_classes] )
+    }
+  }
+}
+
+#test=uniprot_hist[apply(uniprot_hist, 1, max)&gt;30,]
+test=uniprot_hist
+
+library(pheatmap)
+
+reactome_classes=unique(Tao_reactome_results$Go_Reactome_root_names)
+reactome_classes=unique(unlist(sapply(reactome_classes, function(x){strsplit(x,split = &quot;#&quot;)[[1]]})))
+
+module2reactomeClasses=data.frame(row.names = c(&quot;module&quot;,&quot;reactome_class&quot;))
+
+for(i in 1:length(tao_reactome_module_names)){
+  #i=198
+  temp_classes=unique(Tao_reactome_results$Go_Reactome_root_names[Tao_reactome_results$module==tao_reactome_module_names[i]])
+  temp_classes=unique(unlist(sapply(temp_classes, function(x){strsplit(x,split = &quot;#&quot;)[[1]]})))
+  for (j in 1:length(temp_classes)) {
+    module2reactomeClasses=rbind(module2reactomeClasses,data.frame(module=tao_reactome_module_names[i],reactome_class=temp_classes[j]))
+  }
+}
+
+test1=NULL
+test1_classes=c()
+test1_class_num=c()
+for (i in 1:length(reactome_classes)) {
+    temp_modules=module2reactomeClasses$module[module2reactomeClasses$reactome_class==reactome_classes[i]] 
+    if(length(temp_modules)&gt;1){
+      temp_frame=test[,temp_modules]
+    }else{
+      temp_frame=data.frame(matrix(test[,temp_modules],ncol = 1))
+    }
+    test1_classes=c(test1_classes,rep(reactome_classes[i],ncol(temp_frame)))
+    test1_class_num=c(test1_class_num,ncol(temp_frame))
+    colnames(temp_frame)=paste(reactome_classes[i],1:ncol(temp_frame),sep=&quot;_&quot;)
+    if(i&gt;1){
+      if(ncol(temp_frame)&gt;1){
+        d &lt;- dist(t(temp_frame), method = &quot;euclidean&quot;) # distance matrix
+        fit &lt;- hclust(d, method=&quot;centroid&quot;) 
+        test1=cbind(test1,temp_frame[,fit$order])
+      }else{
+        test1=cbind(test1,temp_frame)
+      }
+      
+    }else{
+      test1=temp_frame
+    }
+}
+
+color = grDevices::colors()[grep(&#39;gr(a|e)y&#39;, grDevices::colors(), invert = T)]
+reactome_class_colors=sample(color,length(reactome_classes))
+names(reactome_class_colors)=reactome_classes
+hist_colors=unlist(sapply(1:length(reactome_classes), function(i){rep(reactome_class_colors[i],test1_class_num[i])}))
+names(hist_colors)=colnames(test1)
+annotation=data.frame(reactome_classes=test1_classes)
+rownames(annotation)=colnames(test1)
+
+anno_colors=list(reactome_classes=reactome_class_colors)
+
+pheatmap(as.matrix(test1),cluster_cols = FALSE,cluster_rows = TRUE,show_colnames  = FALSE,annotation = annotation,annotation_colors = anno_colors)</code></pre>
+<p><img src="supplementary_figures_files/figure-html/unnamed-chunk-6-3.png" width="2000" height="1500" /></p>
+</div>
+
+
+<p>Copyright &copy; 2018 F.Hoffmann-La Roche Ltd-All rights reserved.</p>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

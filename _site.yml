@@ -1,0 +1,24 @@
+name: "DREAM Challenge Module Annotation"
+
+navbar:
+  title: "Home"
+  icon: fa-home
+  left:
+    - text: "Supplementary figures"
+      icon: fa-sticky-note
+      href: supplementary_figures.html
+    - text: "About"
+      icon: fa-info-circle
+      href: about.html
+      
+output_dir: "."
+
+output:
+  html_document:
+    theme: default
+    highlight: textmate
+    includes:
+      in_header: _include/in_header.html
+      after_body: _include/after_body.html
+      
+exclude: ["*.docx","*.R", "supplementary_figures.Rmd"]

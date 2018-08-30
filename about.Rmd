@@ -1,0 +1,15 @@
+---
+title: "About"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This website is built to show you module annotation results for [Disease Module Identification DREAM Challenge Project](https://www.synapse.org/#!Synapse:syn6156761/wiki/400645)
+
+Please feel free to contact *Tao Fang* (<tao.fang@roche.com>),*Daniel Marbach* (<daniel.marbach.dm1@roche.com>) or *Jitao David Zhang* (<jitao_david.zhang@roche.com>)  in case you have any questions about the case. 
+
+
+---

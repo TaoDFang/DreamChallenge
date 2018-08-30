@@ -1,0 +1,31 @@
+---
+title: "DREAM Challenge Module Annotation "
+author: "Tao Fang, Daniel Marbach and Jitao David Zhang, Pharmaceutical Sciences, Pharma Research and Early Development, F. Hoffmann-La Roche Ltd."
+date: "30/08/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Browse Gene Sets
+```{r,warning=FALSE,message=FALSE,echo=FALSE}
+library(DT)
+PPI_STRING_gene2geneset=read.csv(file = "./data/PPI_STRING_gene2geneset.csv",stringsAsFactors = FALSE)
+datatable(PPI_STRING_gene2geneset,escape = FALSE)
+
+```
+
+
+---
+
+
+Click on a module name to view its gene set page.
+
+```{r, results='asis',echo=FALSE}
+PPI_STRING_module_names=readRDS("./data/PPI_STRING_module_names.rds") 
+for (module_name in PPI_STRING_module_names){
+  cat( paste("[",module_name,"]",sep = ""),paste("(./htmls/",module_name,".html",")                       ",sep = ""), " \n",sep = "")
+}
+```
