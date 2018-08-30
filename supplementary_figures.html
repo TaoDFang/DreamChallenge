@@ -372,7 +372,7 @@ uniprot_frame=uniprot_frame[uniprot_reactome_common_genes,]
 
 #
 test=hist(colSums(uniprot_frame),200)</code></pre>
-<p><img src="supplementary_figures_files/figure-html/unnamed-chunk-6-1.png" width="2000" height="1500" /></p>
+<p><img src="supplementary_figures_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <pre class="r"><code>sum(colSums(uniprot_frame)&gt;100 )#&amp; colSums(uniprot_frame)&lt;150)</code></pre>
 <pre><code>## [1] 166</code></pre>
 <pre class="r"><code>sum(rowSums(uniprot_frame)&gt;50)</code></pre>
@@ -387,7 +387,7 @@ uniprot_reactome_common_genes=intersect(uniprot_all_genes,tao_reactome_all_genes
 uniprot_frame_d &lt;- dist(t(uniprot_frame_filted), method = &quot;manhattan&quot;) # distance matrix
 uniprot_frame_fit &lt;- hclust(uniprot_frame_d, method=&quot;ward.D2&quot;) 
 plot(uniprot_frame_fit,ann = FALSE)</code></pre>
-<p><img src="supplementary_figures_files/figure-html/unnamed-chunk-6-2.png" width="2000" height="1500" /></p>
+<p><img src="supplementary_figures_files/figure-html/unnamed-chunk-6-2.png" width="672" /></p>
 <pre class="r"><code>clusterCut &lt;- cutree(uniprot_frame_fit,k=31)   #k=40 h = 1000
 
 clusterCut_groups=unique(clusterCut)
@@ -481,8 +481,19 @@ rownames(annotation)=colnames(test1)
 
 anno_colors=list(reactome_classes=reactome_class_colors)
 
-pheatmap(as.matrix(test1),cluster_cols = FALSE,cluster_rows = TRUE,show_colnames  = FALSE,annotation = annotation,annotation_colors = anno_colors)</code></pre>
-<p><img src="supplementary_figures_files/figure-html/unnamed-chunk-6-3.png" width="2000" height="1500" /></p>
+
+jpeg(&quot;./images/uniprotClass_ReactomeModule_heatmap0.5.jpg&quot;,quality = 100,pointsize = 30,width = 1000,height = 1200)
+pheatmap(as.matrix(test1),cluster_cols = FALSE,cluster_rows = TRUE,show_colnames  = FALSE,annotation = annotation,annotation_colors = anno_colors)
+dev.off()</code></pre>
+<pre><code>## jpeg 
+##    3</code></pre>
+<div style="width:1000px; height:1200px">
+<div class="figure">
+<img src="images/uniprotClass_ReactomeModule_heatmap0.5.jpg" alt="Image" />
+<p class="caption">Image</p>
+</div>
+</div>
+<hr />
 </div>
 
 

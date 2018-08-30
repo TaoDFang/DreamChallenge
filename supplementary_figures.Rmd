@@ -143,7 +143,7 @@ ggplot(overlap_go_terms_frame, aes(x=tao_go_pathway_num, y=overlap_go_pathway_nu
 
 ##For each module associated with a Reactome class (columns), #count of module genes of a given UniProt class (in rows) (analogous to Fig. 3g)
 
-```{r,out.width=2000,out.height=1500}
+```{r,warning=FALSE,message=FALSE}
 
 consensus_genesets=scan("./data/dream_consensus_modules.gmt",what = "",sep = "\n")
 consensus_genesets=strsplit(consensus_genesets,split = "\t")
@@ -278,7 +278,16 @@ rownames(annotation)=colnames(test1)
 
 anno_colors=list(reactome_classes=reactome_class_colors)
 
+
+jpeg("./images/uniprotClass_ReactomeModule_heatmap0.5.jpg",quality = 100,pointsize = 30,width = 1000,height = 1200)
 pheatmap(as.matrix(test1),cluster_cols = FALSE,cluster_rows = TRUE,show_colnames  = FALSE,annotation = annotation,annotation_colors = anno_colors)
+dev.off()
+
+
 ```
 
+<div style="width:1000px; height:1200px">
+![Image](images/uniprotClass_ReactomeModule_heatmap0.5.jpg)
+</div>
 
+---

@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Browse Gene Sets
+## Browse modules by gene names or module names
 ```{r,warning=FALSE,message=FALSE,echo=FALSE}
 library(DT)
 PPI_STRING_gene2geneset=read.csv(file = "./data/PPI_STRING_gene2geneset.csv",stringsAsFactors = FALSE)
@@ -21,7 +21,7 @@ datatable(PPI_STRING_gene2geneset,escape = FALSE)
 ---
 
 
-Click on a module name to view its gene set page.
+Click on a module name to view its module page.
 
 ```{r, results='asis',echo=FALSE}
 PPI_STRING_module_names=readRDS("./data/PPI_STRING_module_names.rds") 
